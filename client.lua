@@ -79,7 +79,10 @@ function startSearching(time, dict, anim, cb)
         TaskPlayAnim(ped, animDict, animation, 8.0, 8.0, time, 1, 1, 0, 0, 0)
     FreezeEntityPosition(playerPed, true)
     local ped = GetPlayerPed(-1)
-    exports['np-taskbar']:taskBar(14000, "søger..") 
+	-------
+	Din progressbar her
+	------
+ Citizen.Wait(5000)
     ClearPedTasks(ped)
     FreezeEntityPosition(playerPed, false)
     canSearch = true
